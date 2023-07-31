@@ -2,6 +2,9 @@ const from = document.getElementById('from')
 const inputVal = document.getElementById('inputVal')
 const val = document.getElementById('val')
 function yard() {
+    if (inputVal.value == '') {
+        return;
+    }
     let fromVal = from.value
     if (fromVal === 'yard') {
         val.textContent = inputVal.value
@@ -19,6 +22,9 @@ function yard() {
 
 function meter() {
     let fromVal = from.value
+    if (inputVal.value == '') {
+        return;
+    }
     if (fromVal === 'meter') {
         val.textContent = parseFloat(inputVal.value) 
     }
@@ -36,6 +42,9 @@ function meter() {
 
 function kilometre() {
     let fromVal = from.value
+    if (inputVal.value == '') {
+        return;
+    }
     if (fromVal === 'yard'){
 
         val.textContent = parseFloat(inputVal.value) / 1094
@@ -52,6 +61,9 @@ function kilometre() {
 }
 function mile() {
     let fromVal = from.value
+    if (inputVal.value == '') {
+        return;
+    }
     if (fromVal === 'yard') {
         val.textContent = parseFloat(inputVal.value) / 1760
     }

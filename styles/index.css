@@ -8,6 +8,7 @@ body {
     display: grid;
     place-items: center;
     height: 100vh;
+    background: linear-gradient(to bottom , #181818,#18181890);
 }
 form {
     width: 100%;
@@ -15,6 +16,7 @@ form {
     border: 1px solid gray;
     padding: 20px;
     border-radius: 20px;
+    background-color: #222222;
 }
 
 .title {
@@ -23,6 +25,7 @@ form {
     text-align: center;
     font-size: 20px;
     letter-spacing: 1.5px;
+    color: #fff;
 }
 
 form .value_input {
@@ -50,8 +53,15 @@ form .buttons button {
     padding: 6px 20px;
     letter-spacing: 1.5px;
     cursor: pointer;
+    background-color: #3E4684;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    margin: 5px;
 }
-
+form .buttons button:focus {
+    background-color: red;
+}
 .value {
     text-align: center;
     padding: 5px;
@@ -64,4 +74,6 @@ form .buttons button {
     border: 1px solid gray;
     border-radius: 10px;
     padding: 10px;
+    background-color: #00FF00;
+    color: #222222;
 }
