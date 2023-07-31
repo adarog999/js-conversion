@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Work+Sans&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+form {
+    width: 100%;
+    max-width: 560px;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.title {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+form .value_input {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-content: center;
+}
+form .value_input select {
+    padding: 5px 20px;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+}
+form .value_input input {
+    font-size: 16px;
+    padding: 0 10px;
+    letter-spacing: 1.5px;
+    outline: none;
+} 
+
+form .buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+form .buttons button {
+    padding: 6px 20px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.value {
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.value p {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+}
